@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infinity</title>
+    <style>
+        #Infinity {
+            width: 220px;
+            height: 100px;
+            float: left;
+            position: relative;
+        }
+        #Infinity:before, #Infinity:after {
+            content: "";
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 20px solid #008bb0;
+            border-radius: 50px 50px 0 50px;
+            transform: rotate(-45deg);
+        }
+        #Infinity:after {
+            left: auto;
+            right: 0;
+            border-radius: 50px 50px 50px 0;
+            transform: rotate(45deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="Infinity">
+
+    </div>
+</body>
+</html>

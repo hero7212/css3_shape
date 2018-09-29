@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>心形</title>
+    <style>
+        #Heart {
+            float: left;
+            position: relative;
+        }
+        #Heart:before, #Heart:after {
+            content: '';
+            width: 70px;
+            height: 115px;
+            position: absolute;
+            background: red;
+            left:70px;
+            top: 0;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+        #Heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="Heart"></div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Burst12</title>
+    <style>
+        #Burst12 {
+            width: 80px;
+            height: 80px;
+            margin: 20px 20px;
+            float: left;
+            background-color: #a8ff26;
+            position: relative;
+            text-align: center;
+        }
+        #Burst12:before, #Burst12:after{
+            width: 80px;
+            height: 80px;
+            top: 0;
+            left: 0;
+            background-color: #a8ff26;
+            position: absolute;
+            content: "";
+        }
+        #Burst12:before{
+            transform:rotate(30deg);
+        
+        }
+        #Burst12:after{
+            transform:rotate(60deg);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="Burst12"></div>
+</body>
+</html>
